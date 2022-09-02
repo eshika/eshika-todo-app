@@ -8,15 +8,18 @@
 <body>
   <!-- Header with title and text bar for adding new tasks -->
   <div id="headerDiv" class="header">
+    <!-- Header with title of the webpage -->
     <h2>My To Do List</h2>
+    <!-- Add text box for typing in task name -->
     <input type="text" id="myInput" placeholder="Type in task here...">
+    <!-- Create add button to add new tasks -->
     <span onclick="newElement()" class="addBtn">Add</span>
 
   </div>
 
 <!-- Ul tag creates unordered bulleted list -->
- <ul id="myList">
-    <!-- Li tag creates list item -->
+ <ul id="myList" class="drag-sort-enable">
+    <!-- Li tag creates list item. Here are some examples. -->
     <li>CS 279 HW 1</li>
     <li class="checked">Go to first CS 279 class</li>
   </ul>
