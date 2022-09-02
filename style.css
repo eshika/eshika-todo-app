@@ -1,0 +1,135 @@
+/* For all elements: include the border and padding when getting the size. */
+* {
+  box-sizing: border-box;
+}
+
+/* Set margins and padding to 0 for the list. */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set properties for all the list items. */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  /* Standard background color (white), font/font size,
+     transition time for the list items. */
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  font-family: sans-serif;
+
+  /* Make sure the list items cannot be selected. */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set the odd numbered list items to a slightly darker color to create separation. */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darken background color slightly when a user hovers on a task. */
+ul li:hover {
+  background: #ddd;
+}
+
+/* Darken the background and strike through the text when the item is checked. */
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add the check sign when the item is checked. */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Change the list item and text to transparent
+   with a solid border when it is being dragged. */
+ul li.drag-sort-active {
+    background: transparent;
+    color: transparent;
+    border: 1px solid #4ca1af;
+}
+
+/* Set span to transparent when it is being dragged. */
+span.drag-sort-active {
+    background: transparent;
+    color: transparent;
+}
+
+/* Set the properties for the delete button. */
+.close {
+  position: absolute;
+  /* Make it right aligned with a bit of padding. */
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+/* Make the delete button red with white x on hover. */
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Set the properties for the page header. */
+.header {
+  background-color: #deb82f;
+  padding: 30px 40px;
+  color: black;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+/* Insert some empty space at the bottom of the header. */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Set the properties for the input text box. */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Set the properties for the Add task button. */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+/* Darken the add button on hover to show that it can be clicked. */
+.addBtn:hover {
+  background-color: #bbb;
+}
