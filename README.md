@@ -5,5 +5,5 @@ This repo contains the code for a basic To Do App website made with just HTML, C
 The final site can be accessed here: https://eshika.github.io/eshika-todo-app/
 
 The following tutorials were used as the base for the code:
-* Basic Todo list site: https://www.w3schools.com/howto/howto_js_todolist.asp
+* Basic To Do List tutorial: https://www.w3schools.com/howto/howto_js_todolist.asp
 * Drag and drop functionality: https://www.codehim.com/vanilla-javascript/javascript-drag-and-drop-reorder-list/
